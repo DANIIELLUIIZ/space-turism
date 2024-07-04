@@ -17,7 +17,7 @@ padding: 0 30px;
 
 @media (max-width: 950px) {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   background-image: url(${BackGroundTablet});
 
   }
@@ -33,18 +33,31 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 max-width: 1024px;
-max-height: 400px;
+min-height: 450px;
+max-height: 450px;
 margin-bottom: 20vh;
+
 
 
 @media (max-width: 900px) {
     display: flex;
-    max-height: 100%;
+    min-height: 700px;
     align-items: center; 
+    justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 0;
-    gap: 40px;    
+    margin-bottom: 40px;
+
   }
+  @media (max-width: 600px) {
+    display: flex;
+    min-height: 90vh;
+    align-items: center; 
+    justify-content: space-around;
+   
+    margin: 0;
+    
+  }
+
 
 
 `
@@ -117,10 +130,15 @@ transition: ease-in-out 0.4s;
 &:hover{
 width: 280px;
 height: 280px;
-
 filter: brightness(2);
-
 box-shadow: 0px 10px 80px 0px #FFFFFF;
+
+@media (max-width: 600px) {
+  width: 150px;
+  height: 150px;
+  font-size: 18px;
+
+  }
 }
 
 
@@ -132,6 +150,11 @@ box-shadow: 0px 10px 80px 0px #FFFFFF;
   width: 144px;
   height: 144px;
   font-size: 18px;
+
+  &:hover{
+    width: 150px;
+  height: 150px;
+  }
   }
 
 
