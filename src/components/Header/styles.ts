@@ -19,13 +19,15 @@ export const Wrapper = styled.header`
  top: 50%;
  right: 46%;
  opacity: 0.3;
-
+ @media (max-width: 900px) {
+  display: none;
+}
  }
 `
 export const Image = styled.img`
  width: 48px;
  height: 48px;
- margin-left: 20px;
+ margin:0 20px;
 `
 export const Nav = styled.nav`
  display: flex;
@@ -41,9 +43,16 @@ export const Ul = styled.ul`
  height: 100%;
  justify-content: space-around;
  align-items: center;
-
+ 
  backdrop-filter: blur(90px);
+ @media (max-width: 900px) {
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.08);
+}
 
+@media (max-width: 600px) {
+  display: none;
+}
 
  li{
   font-family: Barlow Condensed;
