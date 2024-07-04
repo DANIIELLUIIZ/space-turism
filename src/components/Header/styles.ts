@@ -7,8 +7,13 @@ export const Wrapper = styled.header`
  width: 100%;
  height: 90px;
  align-items: center;
- 
  top: 40px;
+
+
+ @media (max-width: 600px) {
+  top: 20px;;
+}
+
 
  &::after{
   position: absolute;
@@ -28,6 +33,11 @@ export const Image = styled.img`
  width: 48px;
  height: 48px;
  margin:0 20px;
+
+ @media (max-width: 600px) {
+  width: 40px;
+  height: 40px;
+}
 `
 export const Nav = styled.nav`
  display: flex;
