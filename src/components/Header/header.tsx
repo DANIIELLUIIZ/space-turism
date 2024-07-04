@@ -1,4 +1,5 @@
 import {Wrapper, Image ,Nav,Ul} from "./styles"
+import {IoMdMenu}  from "react-icons/io";
 import Logo from "../../assets/shared/logo.svg"
 export default function header() {
   return (
@@ -11,6 +12,7 @@ export default function header() {
           <li><span>02</span> CREW</li>
           <li><span>03</span> TECHNOLOGY</li>
         </Ul>
+        <IoMdMenu color="#FFFFFF" size={30} />
      </Nav>
     </Wrapper>
   )

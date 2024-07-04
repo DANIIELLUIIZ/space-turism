@@ -1,4 +1,5 @@
-import {Container} from "./App"
+
+import  GlobalStyle  from './styles/global';
 import Header  from './components/Header/header';
 
 import Home from './pages/Home/home'
@@ -6,13 +7,12 @@ import Home from './pages/Home/home'
 function App() {
 
   return (
-    <>
- 
-    <Container>
+    <div>
+        <GlobalStyle/>
          <Header/>
          <Home/>
-    </Container>
-    </>
+    </div>
+    
   )
 }
 

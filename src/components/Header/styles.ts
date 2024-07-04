@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Wrapper = styled.header`
- position: absolute;
+ position: fixed;
  display: flex;
  width: 100%;
  height: 90px;
@@ -10,8 +10,8 @@ export const Wrapper = styled.header`
  top: 40px;
 
 
- @media (max-width: 600px) {
-  top: 20px;;
+ @media (max-width: 900px) {
+  top: 0px;;
 }
 
 
@@ -44,6 +44,7 @@ export const Nav = styled.nav`
  width: 100%;
  height: 100%;
  justify-content: flex-end;
+ align-items: center;
 
 
 `
@@ -60,7 +61,7 @@ export const Ul = styled.ul`
   background-color:rgba(255, 255, 255, 0.08);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   display: none;
 }
 
