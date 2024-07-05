@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 
 export const Wrapper = styled.header`
- position: fixed;
+position: absolute;
  display: flex;
  width: 100%;
  height: 90px;
  align-items: center;
  top: 40px;
-
 
  @media (max-width: 900px) {
   top: 0px;;

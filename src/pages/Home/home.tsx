@@ -1,6 +1,6 @@
-import { Container, Wrapper ,Content} from "./styles";
+import { Container, Wrapper ,Content} from "./styles/styles";
 import { ThemeProvider } from "styled-components";
-import fonts from "./homeTheme";
+import fonts from "./styles/homeTheme";
 
 export default function Home() {
   return (

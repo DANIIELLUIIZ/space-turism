@@ -1,18 +1,21 @@
-import {Wrapper, Image ,Nav,Ul} from "./styles"
-import {IoMdMenu}  from "react-icons/io";
+import {Wrapper,Nav,Image,Ul} from "./styles"
+import {Button} from "../Button/button"
+import { IoMdMenu }  from "react-icons/io"
 import Logo from "../../assets/shared/logo.svg"
 export default function header() {
   return (
     <Wrapper>
      <Image src={Logo}/>
-     <Nav>
+      <Nav>
         <Ul>
-          <li><span>00</span> HOME</li>
-          <li><span>01</span> DESTINATION</li>
-          <li><span>02</span> CREW</li>
-          <li><span>03</span> TECHNOLOGY</li>
+          <li><span>00</span> HOME </li>
+          <li><span>01</span> DESTINATION </li>
+          <li><span>02</span> CREW </li>
+          <li><span>03</span> TECHNOLOGY </li>
         </Ul>
-        <IoMdMenu color="#FFFFFF" size={30} />
+
+        <Button Icon={<IoMdMenu size={40}/>}/>
+  
      </Nav>
     </Wrapper>
   )

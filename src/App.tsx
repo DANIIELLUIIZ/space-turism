@@ -1,8 +1,8 @@
 
 import  GlobalStyle  from './styles/global';
-import Header  from './components/Header/header';
+import Header  from './components/Header/Header';
 
-import Home from './pages/Home/home'
+import Home from './pages/Home/Home'
 
 function App() {
 

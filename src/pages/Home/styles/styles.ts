@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import BackGroundDesktop from "../../assets/home/background-home-desktop.jpg"
-import BackGroundTablet from "../../assets/home/background-home-tablet.jpg"
-import BackGroundMobile from "../../assets/home/background-home-mobile.jpg"
+import BackGroundDesktop from "../../../assets/home/background-home-desktop.jpg"
+import BackGroundTablet from "../../../assets/home/background-home-tablet.jpg"
+import BackGroundMobile from "../../../assets/home/background-home-mobile.jpg"
 
 export const Container = styled.main`
 display: flex;
@@ -65,14 +65,14 @@ button{
   font-family: ${props => props.theme.button.font};
   font-size: ${props => props.theme.button.fontSize}px;
   font-weight: ${props => props.theme.button.fontWeight};
-  width:${props => props.theme.button.width}px;
-  height:${props => props.theme.button.height}px;
+  min-width:${props => props.theme.button.width}px;
+  min-height:${props => props.theme.button.height}px;
   border: none;
   border-radius: 100%;
 
   @media (max-width: 480px){
-    width: ${props => props.theme.button.mobile.width}px;
-    height: ${props => props.theme.button.mobile.height}px;
+    min-width: ${props => props.theme.button.mobile.width}px;
+    min-height: ${props => props.theme.button.mobile.height}px;
     font-size: ${props => props.theme.button.mobile.fontSize}px;
   }
 }
