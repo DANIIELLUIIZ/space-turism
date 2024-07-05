@@ -1,8 +1,12 @@
-//TODO Fazer botao para o menu mobile
-
-export default function Button() {
-  return (
-    <div>B</div>
-  )
+import {Wrapper} from "./styles"
+interface IButtonProps {
+  Icon: JSX.Element; 
 }
 
+export const Button: React.FC<IButtonProps> = ({ Icon }) => {
+  return (
+    <Wrapper>
+      {Icon} 
+    </Wrapper>
+  );
+};
