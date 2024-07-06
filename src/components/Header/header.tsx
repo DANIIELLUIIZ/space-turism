@@ -1,5 +1,5 @@
 import {Wrapper,Nav,Image,Ul} from "./styles"
-import {Button} from "./MenuButton/button"
+import {Button} from "../Button/button"
 import { IoMdMenu }  from "react-icons/io"
 import Logo from "../../assets/shared/logo.svg"
 import AsideMenu from "../AsideMenu/AsideMenu"

@@ -13,7 +13,7 @@ position: absolute;
 }
 
 @media (max-width: 480px) {
-padding-right:30px ;
+padding-right:20px ;
 min-width: 300px;
 justify-content: space-between;
 }
