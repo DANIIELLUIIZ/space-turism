@@ -1,5 +1,5 @@
 import {Nav,Ul} from "./styles"
-import { Button } from "./Button/button"
+import { Button } from "../Button/button"
 import { MdClose } from "react-icons/md";
  
 
@@ -24,8 +24,8 @@ export default function AsideMenu({showMenu, setShowMenu}:IAsideMenu) {
           <li><span>02</span> CREW </li>
           <li><span>03</span> TECHNOLOGY </li>
         </Ul>       
+      
       <Button Icon={<MdClose size={40} onClick={()=>{setShowMenu(false)}}/>} />
-     
      </Nav>
    
   )

@@ -4,15 +4,14 @@ import { INav } from "./AsideMenu";
 
 export const Nav = styled.nav<INav>`
  position: absolute;
- display: none;
+ display: flex;
  min-width: 60%;
  height: 100vh;
- left: -1000%;
+ left: -100%;
+ padding-right: 20px;
  top:0;
  backdrop-filter: blur(90px);
- /* z-index: -100; */
  transition: ease-in-out 0.3s;
-
 
  ${({ isVisible }) =>
     isVisible &&
@@ -21,10 +20,8 @@ export const Nav = styled.nav<INav>`
      
      
     `}
-
-
  @media (max-width: 480px) {
-  display:block;
+  display:flex;
 
 }
 `
@@ -36,9 +33,7 @@ display: flex;
  height: 100%;
  gap: 30px;
  padding: 80px 10px;
- 
 
- 
  li{
   font-family: Barlow Condensed;
   font-size: 16px;
