@@ -1,7 +1,7 @@
 import styled  from "styled-components";
 
 export const Wrapper = styled.button`
-
+position: absolute;
 cursor: pointer;
 display: none;
 width: 40px;

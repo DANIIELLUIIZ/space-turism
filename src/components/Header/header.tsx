@@ -1,10 +1,23 @@
 import {Wrapper,Nav,Image,Ul} from "./styles"
-import {Button} from "../Button/button"
+import {Button} from "./MenuButton/button"
 import { IoMdMenu }  from "react-icons/io"
 import Logo from "../../assets/shared/logo.svg"
-export default function header() {
+import AsideMenu from "../AsideMenu/AsideMenu"
+import { useState } from "react"
+
+
+export default function Header() {
+
+
+
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <Wrapper>
+     <AsideMenu
+     showMenu={showMenu}
+     setShowMenu={setShowMenu}
+     />
      <Image src={Logo}/>
       <Nav>
         <Ul>
@@ -14,9 +27,10 @@ export default function header() {
           <li><span>03</span> TECHNOLOGY </li>
         </Ul>
 
-        <Button Icon={<IoMdMenu size={40}/>}/>
+       
   
      </Nav>
+      {!showMenu ? <Button Icon={<IoMdMenu size={40} onClick={()=>{setShowMenu(true)}}/>} /> : null}
     </Wrapper>
   )
 }

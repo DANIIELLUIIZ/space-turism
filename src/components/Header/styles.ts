@@ -8,11 +8,15 @@ position: absolute;
  height: 90px;
  align-items: center;
  top: 40px;
-
  @media (max-width: 900px) {
-  top: 0px;;
+  top: 0px;
 }
 
+@media (max-width: 480px) {
+padding-right:30px ;
+min-width: 300px;
+justify-content: space-between;
+}
 
  &::after{
   position: absolute;
@@ -25,8 +29,11 @@ position: absolute;
  opacity: 0.3;
  @media (max-width: 900px) {
   display: none;
+  
 }
+
  }
+
 `
 export const Image = styled.img`
  width: 48px;
@@ -45,6 +52,9 @@ export const Nav = styled.nav`
  justify-content: flex-end;
  align-items: center;
 
+ @media (max-width: 480px) {
+display:none
+}
 
 `
 export const Ul = styled.ul`
