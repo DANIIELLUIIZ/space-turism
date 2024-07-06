@@ -4,7 +4,7 @@ import { INav } from "./AsideMenu";
 
 export const Nav = styled.nav<INav>`
  position: absolute;
- display: flex;
+ display:none;
  min-width: 60%;
  height: 100vh;
  left: -100%;
