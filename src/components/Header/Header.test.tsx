@@ -4,9 +4,9 @@ import Header from "./Header"
 test("sum", ()=>{
   const {findByText} = render(
       <Header/>
-    
 )
-   expect(findByText("HOME")).toBeInTheDocument()
+
+   expect(findByText("00")).toBeInTheDocument()
  })
 
  

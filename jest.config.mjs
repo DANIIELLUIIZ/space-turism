@@ -180,6 +180,8 @@ const config = {
   transform: {
     "^.+\\.(t|j)sx?$": [
       "@swc/jest",
+         
+      
       {
         jsc: {
           parser: {
@@ -200,6 +202,7 @@ const config = {
           type: "es6",
           noInterop: false,
         },
+        
       },
     ],
   }

@@ -8,12 +8,12 @@ position: absolute;
  height: 90px;
  align-items: center;
  top: 40px;
+
  @media (max-width: 900px) {
   top: 0px;
 }
 
 @media (max-width: 480px) {
-padding-right:20px ;
 min-width: 300px;
 justify-content: space-between;
 }

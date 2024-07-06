@@ -1,7 +1,7 @@
-import {Wrapper,Nav,Image,Ul} from "./styles"
+import {Wrapper,Nav,Ul} from "./styles"
 import {Button} from "../Button/button"
 import { IoMdMenu }  from "react-icons/io"
-import Logo from "../../assets/shared/logo.svg"
+import Logo from "../Logo/Logo"
 import AsideMenu from "../AsideMenu/AsideMenu"
 import { useState } from "react"
 
@@ -18,7 +18,7 @@ export default function Header() {
      showMenu={showMenu}
      setShowMenu={setShowMenu}
      />
-     <Image src={Logo}/>
+     <Logo/>
       <Nav>
         <Ul>
           <li><span>00</span> HOME </li>
