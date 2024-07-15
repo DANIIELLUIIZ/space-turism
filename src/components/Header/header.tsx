@@ -18,7 +18,7 @@ export default function Header() {
      <Logo/>
       <Nav>
         <Ul>
-          <li><a href="www.google.com"><span>00</span> HOME</a> </li>
+          <li><a><span>00</span> HOME</a> </li>
           <li><a><span>01</span> DESTINATION</a> </li>
           <li><a><span>02</span> CREW</a> </li>
           <li><a><span>03</span> TECHNOLOGY</a> </li>
