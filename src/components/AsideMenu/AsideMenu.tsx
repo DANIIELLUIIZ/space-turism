@@ -19,10 +19,10 @@ export default function AsideMenu({showMenu, setShowMenu}:IAsideMenu) {
       <Nav 
       isVisible={showMenu}>
         <Ul>
-          <li><span>00</span> HOME </li>
-          <li><span>01</span> DESTINATION </li>
-          <li><span>02</span> CREW </li>
-          <li><span>03</span> TECHNOLOGY </li>
+          <li><a><span>00</span> HOME</a> </li>
+          <li><a><span>01</span> DESTINATION</a> </li>
+          <li><a><span>02</span> CREW</a> </li>
+          <li><a><span>03</span> TECHNOLOGY</a> </li>
         </Ul>       
       
       <Button data="close-mobile-btn" onClick={()=>{setShowMenu(false)}} Icon={<MdClose size={40}/>}/>
