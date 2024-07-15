@@ -63,11 +63,12 @@ export const Ul = styled.ul`
  height: 100%;
  justify-content: space-around;
  align-items: center;
+ background-color:rgba(255, 255, 255, 0.08);
  
  backdrop-filter: blur(90px);
  @media (max-width: 900px) {
   width: 100%;
-  background-color:rgba(255, 255, 255, 0.08);
+ 
 }
 
 @media (max-width: 480px) {
