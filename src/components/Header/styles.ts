@@ -84,10 +84,35 @@ export const Ul = styled.ul`
   margin-left: 10px;
   opacity: 3.9;
  }
+ a{
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 5px 0;
+
+  &::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    transition: ease-in-out 0.3s;
+  }
+
+  &:hover::after{
+    width: 100%;
+  }
+ }
+
  span {
   font-family: Barlow Condensed;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 2.7px;
  }
+
 `

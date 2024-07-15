@@ -14,23 +14,22 @@ export default function Header() {
 
   return (
     <Wrapper>
-     <AsideMenu
-     showMenu={showMenu}
-     setShowMenu={setShowMenu}
-     />
+      
      <Logo/>
       <Nav>
         <Ul>
-          <li><span>00</span> HOME </li>
-          <li><span>01</span> DESTINATION </li>
-          <li><span>02</span> CREW </li>
-          <li><span>03</span> TECHNOLOGY </li>
+          <li><a href="www.google.com"><span>00</span> HOME</a> </li>
+          <li><a><span>01</span> DESTINATION</a> </li>
+          <li><a><span>02</span> CREW</a> </li>
+          <li><a><span>03</span> TECHNOLOGY</a> </li>
         </Ul>
-
-       
-  
      </Nav>
-      {!showMenu ? <Button Icon={<IoMdMenu size={40} onClick={()=>{setShowMenu(true)}}/>} /> : null}
+
+      {!showMenu ?   <Button onClick={()=>{setShowMenu(true) }} data="open-mobile-btn"  Icon={<IoMdMenu size={40}/>}/> :null }
+      {showMenu ?  <AsideMenu
+     showMenu={showMenu}
+     setShowMenu={setShowMenu}
+     />:null}
     </Wrapper>
   )
 }
