@@ -4,7 +4,7 @@ import { MdClose } from "react-icons/md";
  
 
 interface IAsideMenu {
-  showMenu:boolean;
+  showMenu?:boolean;
   setShowMenu:React.Dispatch<React.SetStateAction<boolean>>;
   }
   
@@ -16,7 +16,7 @@ export interface INav{
 export default function AsideMenu({showMenu, setShowMenu}:IAsideMenu) {
   
   return (
-      <Nav
+      <Nav 
       isVisible={showMenu}>
         <Ul>
           <li><span>00</span> HOME </li>
@@ -25,7 +25,7 @@ export default function AsideMenu({showMenu, setShowMenu}:IAsideMenu) {
           <li><span>03</span> TECHNOLOGY </li>
         </Ul>       
       
-      <Button Icon={<MdClose size={40} onClick={()=>{setShowMenu(false)}}/>} />
+      <Button data="close-mobile-btn" onClick={()=>{setShowMenu(false)}} Icon={<MdClose size={40}/>}/>
      </Nav>
    
   )
